@@ -1,0 +1,81 @@
+body {
+  font-family: "Roboto", sans-serif;
+  margin: 0;
+  padding: 0;
+  background: #f5f7fa;
+  color: #333;
+}
+
+header {
+  background: linear-gradient(135deg, #0077b6, #00b4d8);
+  color: white;
+  padding: 30px 15px;
+  text-align: center;
+  font-family: "Quicksand", sans-serif;
+  font-size: 32px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  letter-spacing: 1px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
+  padding: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  height: 140px;
+  object-fit: cover;
+}
+
+.card h3 {
+  font-size: 18px;
+  color: #0077b6;
+  margin: 10px 15px 5px;
+  font-family: "Quicksand", sans-serif;
+}
+
+.card iframe {
+  width: 100%;
+  height: 200px;
+  border: none;
+}
+
+.card .btn-direction {
+  display: inline-block;
+  margin: 10px 15px 15px;
+  padding: 10px 16px;
+  background-color: #00b4d8;
+  color: white;
+  text-decoration: none;
+  border-radius: 8px;
+  font-size: 14px;
+  transition: background-color 0.2s ease;
+}
+
+.card .btn-direction:hover {
+  background-color: #0096c7;
+}
+
+@media (max-width: 600px) {
+  header {
+    font-size: 24px;
+    padding: 20px 10px;
+  }
+}
